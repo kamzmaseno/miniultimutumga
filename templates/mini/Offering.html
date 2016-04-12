@@ -1,0 +1,19 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+    My application
+{% endblock %}
+
+{% block content %}
+
+
+    <p>
+    You are Participant 1. Now you have {{Constants.endowment}}.
+    </p>
+
+    {% formfield group.offer_amount with label="How much do you want to offer to participant 2?" %}
+
+    {% next_button %}
+
+{% endblock %}

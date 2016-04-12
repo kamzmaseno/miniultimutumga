@@ -1,0 +1,19 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+    Application
+{% endblock %}
+
+{% block content %}
+
+
+    <p>
+        You are Participant 3. Participant 1 offered participant 3 {{group.offer_amount}}
+    </p>
+
+    {% formfield group.punishment_amount with label="How much do you want to punish?" %}
+
+    {% next_button %}
+
+{% endblock %}
